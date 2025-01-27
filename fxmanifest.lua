@@ -5,7 +5,7 @@ lua54 "yes"
 name "melons_interactions"
 author "IlMelons"
 description "Melons Interactions"
-version "1.0.0"
+version "1.0.1"
 repository "https://github.com/IlMelons/melons_interactions"
 
 shared_scripts {
@@ -17,9 +17,8 @@ client_scripts {
 }
 
 server_scripts {
-    "@oxmysql/lib/MySQL.lua"
     "bridge/server/**/*.lua",
     "config/server.lua",
     "server/*.lua",
-    "optional.lua",
+    "checker.lua",
 }
